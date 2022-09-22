@@ -4,7 +4,6 @@ const playAgainBtn = document.getElementById('play-button');
 const popup = document.getElementById('popup-container');
 const notification = document.getElementById('notification-container');
 const finalMessage = document.getElementById('final-message');
-
 const figureParts = document.querySelectorAll(".figure-part");
 
 
@@ -43,11 +42,15 @@ function displayWord(){
 
 //update the wrong letters
 function updateWrongLetterE1(){
+    
     //display wrong letters
     wrongLettersE1.innerHTML = `
-    ${wrongLetters.length > 0 ? '<p>Wrong</p>' : ''}
-    ${wrongLetters.map(letter => `<span>${letter}</span>`)}
+     <p>Wrong</p>
+     
+    ${wrongLetters.map(letter =>  `<span>${letter}</span>`)}
     `;
+
+    
     //display parts
     figureParts.forEach((part,index) => {
         const errors = wrongLetters.length;
@@ -105,14 +108,16 @@ playAgainBtn.addEventListener('click', () => {
     //empty arrays
     correctLetters.splice(0);
     wrongLetters.splice(0);
-
+    
     selectedWord = words[Math.floor(Math.random() * words.length)];
 
     displayWord();
-
+    
     updateWrongLetterE1();
+    
 
     popup.style.display = 'none';
+    wrongLetters.style.display = 'show';
 });
 
 displayWord();

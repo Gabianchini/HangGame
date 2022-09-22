@@ -64,11 +64,10 @@ header{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 10rem;
-    height: 5rem;
+    
     padding: 1rem;
     border-radius: 10px;
-    background-color: purple;
+    
     color:#fff;
     
 
@@ -127,6 +126,8 @@ header{
     box-shadow: 0 15px 10px 3px;
     padding: 20px;
     text-align: center;
+    height:30vh;
+    font-size: 20px;
 }
 
 .popup button{
@@ -136,8 +137,10 @@ header{
     border: 0;
     margin-top: 20px;
     padding: 12px 20px;
-    font-size: 16px;
-    border-radius: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.411);
+    height: 8vh;
 }
 
 .popup button:active{
@@ -178,9 +181,7 @@ header{
         height:8rem;
         padding:5px;
         position: relative;
-        right: 45px;
-
-        
+                
     }
 
 
@@ -201,11 +202,7 @@ header{
         height: 80px;
     }
     
-    .header-container{
-        width: 10rem;
-        display: flex;
-        height: 5rem;
-    }
+   
 
     h1{
         font-size: 25px;
@@ -217,18 +214,37 @@ header{
         font-size: 15px;
         text-align: center;
         position: relative;
-        bottom: 6vh;
-        
+        top:10px;
+         
 
     }
 
     .popup{
-       width: 15rem;
-       height: 15rem;
-        
+       width: 20rem;
+       height: 20rem;
+        font-size: 20px;
+
         
         
     }
+
+    .popup button{
+        cursor: pointer;
+        background-color: #fff;
+        color: purple;
+        border:0;
+        margin-top: 20px;
+        padding: 10px 35px;
+        font-size: 20px;
+        border-radius: 20px;
+        box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.304);
+    }
+
+    .notification-container.show{
+        transform: translateY(-100px);
+    }
+
+
     
     
     
