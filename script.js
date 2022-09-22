@@ -7,11 +7,8 @@ const finalMessage = document.getElementById('final-message');
 const figureParts = document.querySelectorAll(".figure-part");
 
 
-<<<<<<< HEAD
-import words from '/node_modules/an-array-of-english-words/index.json' assert {type: 'json'};
-=======
-import words from '/node_modules/an-array-of-english-words/index.json';
->>>>>>> 2db1138f8c84e34ddc964571406738d9ff9f716d
+
+import words from '/HangmanGame/node_modules/an-array-of-english-words/index.json';
 
 
 
