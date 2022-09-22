@@ -117,7 +117,6 @@ playAgainBtn.addEventListener('click', () => {
     
 
     popup.style.display = 'none';
-    wrongLetters.style.display = 'show';
 });
 
 displayWord();

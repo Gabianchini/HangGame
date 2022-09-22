@@ -242,10 +242,48 @@ header{
 
     .notification-container.show{
         transform: translateY(-100px);
-    }
+    }   
+    
+}
+
+@media only screen and (max-width: 420px){ 
+.word{
+    width:30vh;
+  
+    
+
+}
+
+.letter{
+    font-size:16px;
+    border-bottom:3.2px solid purple;
+    height:28px;
+    
+}
+
+.popup{
+    height:55vh;
+    width:40vh;
+    box-shadow: 5px 2px 20px 10px rgba(255, 255, 255, 0.6);
+    padding: 40px;
+    font-size:17px;
+}
+
+.notification-container.show{
+    transform:translateY(-180px);
+    
+}
+
+.notification-container{
+    font-size: 12px;
+   
+}
+
+header{
+    width: 30vh;
+    
+}
 
 
-    
-    
-    
+
 }
