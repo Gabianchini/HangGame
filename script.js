@@ -8,7 +8,8 @@ const figureParts = document.querySelectorAll(".figure-part");
 
 
 
-import words from '/HangmanGame/node_modules/an-array-of-english-words/index.json' assert { type: "json" };
+// import words from '/HangmanGame/node_modules/an-array-of-english-words/index.json' assert { type: "json" };
+import words from './node_modules/an-array-of-english-words/index.json'assert { type: "json" };
 
 
 
